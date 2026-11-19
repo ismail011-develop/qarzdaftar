@@ -1,0 +1,21 @@
+# Minimal local config. Run `supabase init` once if you prefer the generated full file.
+project_id = "qarzdaftar"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage"]
+
+[db]
+port = 54322
+major_version = 15
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000"]
+enable_signup = true
+
+[auth.sms]
+enable_signup = true
+enable_confirmations = false   # LOCAL ONLY. In production configure an SMS provider (Twilio/Vonage/MessageBird) and set to true.
